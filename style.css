@@ -1,10 +1,58 @@
-header{
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
+header {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(2, 154, 255);
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
+main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cust_btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 700;
+  background: rgb(2, 154, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.801),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.541), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.botao {
+  border: none;
+  color: #000;
+}
+.botao:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.botao:hover {
+  color: #000;
+}
+.botao:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.botao:active {
+  top: 2px;
 }
